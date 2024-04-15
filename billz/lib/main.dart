@@ -1,5 +1,7 @@
 import 'package:billz/data/expense_data.dart';
+import 'package:billz/pages/intro-screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:provider/provider.dart';
 import 'pages/home_page.dart';
@@ -21,8 +23,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
       create: (context) => ExpenseData(),
-      builder: (context, child) => const MaterialApp(
-          debugShowCheckedModeBanner: false, home: HomePage()),
+      builder: (context, child) => MaterialApp(
+          initialRoute: '/',
+          routes: <String, WidgetBuilder>{
+            '/home': (BuildContext context) => const HomePage()
+          },
+          debugShowCheckedModeBanner: false,
+          home: const IntroScreen()),
     );
   }
 }

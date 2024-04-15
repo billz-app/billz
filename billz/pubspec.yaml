@@ -40,6 +40,10 @@ dependencies:
   hive:
   hive_flutter:
   flutter_slidable:
+  camera:
+  path_provider:
+  path:
+  permission_handler:
 
 dev_dependencies:
   flutter_test:
