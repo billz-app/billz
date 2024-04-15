@@ -42,3 +42,14 @@ Follow these steps to get the app running on your local machine:
 `cd billz && flutter pub get`
 3. Run the app!:
 `flutter doctor run`
+
+
+📸 Screenshots
+----------------
+
+<table>
+  <tr>
+    <td><img src="billz/assets/images/Screenshot1.jpeg" alt="Screenshot 1"></td>
+    <td><img src="billz/assets/images/Screenshot2.jpeg" alt="Screenshot 2"></td>
+  </tr>
+</table>
