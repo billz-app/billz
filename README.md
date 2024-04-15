@@ -28,7 +28,7 @@ Technologies used in the project:
 🤝 Contributing
 ----------------
 
-Refer to [contributing.md](https://github.com/billz-app/billz/billz/CONTRIBUTING.md) if you want to contribute to billz.
+Refer to [contribution.md](https://github.com/billz-app/billz/billz/CONTRIBUTION.md) if you want to contribute to billz.
 
 
 🚀 Installation Guide
