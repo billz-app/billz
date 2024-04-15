@@ -58,6 +58,7 @@ class _IntroScreenState extends State<IntroScreen> {
       }
     } else {
       // Permission already granted
+      Navigator.pushNamed(context, '/home');
       return;
     }
   }
@@ -66,11 +67,39 @@ class _IntroScreenState extends State<IntroScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Test'),
+        title: Text('billz'),
       ),
-      body: GestureDetector(
-        onTap: _checkPermission,
-        child: Text('click'),
+      body: Column(
+        //mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          SizedBox(height: 20),
+          Center(
+            child: Text(
+              'Billz: Your Personal Expense Tracker',
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+              ),
+              //textAlign: TextAlign.center,
+            ),
+          ),
+          SizedBox(height: 50),
+          Text(
+            'We would like to access your camera to allow you to take photos of your receipts. This helps us track your expenses more accurately. Please press \'Allow\' when prompted. Thank you for your cooperation.',
+            style: TextStyle(
+              fontSize: 15,
+              fontWeight: FontWeight.bold,
+            ),
+            textAlign: TextAlign.center,
+          ),
+          SizedBox(height: 20), // Add some spacing
+          OutlinedButton(
+              onPressed: _checkPermission,
+              style: OutlinedButton.styleFrom(
+                side: BorderSide(color: Colors.green, width: 2.0),
+              ),
+              child: Text('Allow', style: TextStyle(color: Colors.green))),
+        ],
       ),
     );
   }

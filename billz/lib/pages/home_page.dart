@@ -106,7 +106,7 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.grey[300],
         floatingActionButton: FloatingActionButton(
           onPressed: addNewExpense,
-          child: Icon(Icons.add),
+          child: Icon(Icons.add, color: Colors.white),
           backgroundColor: Colors.black,
         ),
         body: ListView(

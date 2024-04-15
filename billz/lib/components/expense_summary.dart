@@ -95,15 +95,32 @@ class ExpenseSummary extends StatelessWidget {
         children: [
           // week total
           Padding(
-            padding: const EdgeInsets.all(15.0),
-            child: Row(
-              children: [
-                Text(
-                  'Weekly total: ',
-                  style: TextStyle(fontWeight: FontWeight.bold),
+            padding:
+                const EdgeInsets.only(left: 15.0), // Add padding to the left
+            child: Container(
+              alignment: Alignment.topLeft,
+              child: TextButton(
+                onPressed: () {},
+                style: TextButton.styleFrom(
+                  backgroundColor: Colors.black,
+                  padding: EdgeInsets.all(15.0),
                 ),
-                Text('\₹$weeklyTotal')
-              ],
+                child: Row(
+                  mainAxisSize: MainAxisSize
+                      .min, // Make the row only as wide as the texts
+                  children: [
+                    Text(
+                      'Weekly total: ',
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold, color: Colors.white),
+                    ),
+                    Text(
+                      '\₹$weeklyTotal',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ],
+                ),
+              ),
             ),
           ),
           const SizedBox(
