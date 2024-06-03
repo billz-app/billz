@@ -22,7 +22,7 @@ Technologies used in the project:
 * Deploying a LLM model to categorize the products 
 * Wider range of categorization 
 * Increasing the accuracy of the OCR - Application 
-* Option for user to add their own categories 
+* Option for users to add their own categories 
 * Integrating UPI apps for ease of access
 
 🤝 Contributing
